@@ -4,6 +4,9 @@
 # vscode
 .vscode
 
+# private
+**/private
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -25,6 +28,7 @@ lib64/
 parts/
 sdist/
 var/
+*.py[oc]
 wheels/
 share/python-wheels/
 *.egg-info/
