@@ -4,6 +4,8 @@
 
 This is a summary of the process of setting up a PostgreSQL database using Docker, configuring it for local development, and loading data into it using Python and Pandas.
 
+> Commented notebook with all the code [explore-ingestion.ipynb](explore-ingestion.ipynb)
+
 ## Key Concepts
 
 ### Setting Up PostgreSQL in Docker
@@ -20,16 +22,28 @@ This is a summary of the process of setting up a PostgreSQL database using Docke
 
 - **Docker Run example**:
 
-    ```bash
-    docker run -it \
-        -e POSTGRES_USER="root" \
-        -e POSTGRES_PASSWORD="root" \
-        -e POSTGRES_DB="ny_taxi" \
-        -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
-        -p 5432:5432 \
-        postgres:13
-    ```
+  ```bash
+  docker run -it \
+    --name postgres-container \
+    -e POSTGRES_USER="root" \
+    -e POSTGRES_PASSWORD="root" \
+    -e POSTGRES_DB="ny_taxi" \
+    -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
+    -p 5432:5432 \
+    -d postgres:13
+  ```
 
+- **Stopping the container**:
+
+  ```bash
+  docker stop postgres-container
+  ```
+
+- **Starting the container**:
+
+  ```bash
+  docker start postgres-container
+  ```
 
 ### Connecting to PostgreSQL
 
