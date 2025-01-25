@@ -95,3 +95,83 @@ This is a summary of the process of setting up a PostgreSQL database using Docke
 - Use Docker to run PostgreSQL for local development.
 - Persist data using Docker volumes and map host-container ports for accessibility.
 - Preprocess large datasets with Pandas and load them efficiently into PostgreSQL using chunks.
+
+---
+
+## Extra - Connecting to Postgres with Jupyter and Pandas
+
+This is an alternative method to connect to a Postgres database using Jupyter notebooks and Pandas. It allows you to interact with the database in a Pythonic and user-friendly way, other than using the CLI tool `pgcli`.
+
+Commented notebook with all the code [pg-test-connection.ipynb](pg-test-connection.ipynb)
+
+### Prerequisites
+
+- Ensure Postgres is running (e.g., via Docker).
+- Your target table should exist in the Postgres database `yellow_taxi_data`
+- Required Python packages:
+
+  ```bash
+  pip install sqlalchemy psycopg2-binary pandas
+  ```
+
+### Establishing a Connection
+
+- Use SQLAlchemy to connect to the Postgres database:
+
+  ```python
+  from sqlalchemy import create_engine
+
+  # Replace with your credentials
+  connection_string = "postgresql://username:password@host:port/database"
+  engine = create_engine(connection_string)
+
+  # Test the connection
+  with engine.connect() as connection:
+      print("Connection successful!")
+  ```
+
+### Querying Data
+
+- Run SQL queries and load results into a Pandas DataFrame:
+
+  ```python
+  import pandas as pd
+
+  query = "SELECT 1;"  # Simple query to test the connection
+  df = pd.read_sql(query, engine)
+  print(df)
+  ```
+
+### Listing Tables
+
+- The `\dt` command in `pgcli` does not work in standard SQL. Use an equivalent query to list tables:
+
+  ```python
+  query = """
+    SELECT table_name FROM information_schema.tables
+    WHERE table_schema = 'public';
+    """
+
+  tables = pd.read_sql(query, engine)
+  print(tables)
+  ```
+
+### Inserting Data (optional)
+
+- > **Optional**: If you still have your Postgress table, you can skip this section
+
+- Insert a Pandas DataFrame into a Postgres table:
+
+  ```python
+  df.to_sql("table_name", engine, if_exists="replace", index=False)
+  ```
+
+### Retrieving Data
+
+- Query specific data from a table and load it into a DataFrame:
+
+  ```python
+  query = "SELECT * FROM table_name LIMIT 10;"
+  result_df = pd.read_sql(query, engine)
+  print(result_df)
+  ```
