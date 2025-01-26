@@ -29,7 +29,7 @@ This is a summary of the process of setting up a PostgreSQL database using Docke
     -e POSTGRES_USER="root" \
     -e POSTGRES_PASSWORD="root" \
     -e POSTGRES_DB="ny_taxi" \
-    -v $(pwd)/../ny_taxi_postgres_data:/var/lib/postgresql/data \
+    -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \
     -p 5432:5432 \
     -d postgres:13
   ```
@@ -103,7 +103,8 @@ This is a summary of the process of setting up a PostgreSQL database using Docke
 
 This is an alternative method to connect to a Postgres database using Jupyter notebooks and Pandas. It allows you to interact with the database in a Pythonic and user-friendly way, other than using the CLI tool `pgcli`.
 
-Commented notebook with all the code [pg-test-connection.ipynb](pg-test-connection.ipynb)
+> [!TIP]
+> **Commented notebook with all the code [pg-test-connection.ipynb](pg-test-connection.ipynb)**
 
 ### Prerequisites
 
@@ -159,7 +160,8 @@ Commented notebook with all the code [pg-test-connection.ipynb](pg-test-connecti
 
 ### Inserting Data (optional)
 
-- > [!TIP] > **If you still have your Postgress table, you can skip this section**
+- > [!TIP]
+   > **If you still have your Postgress table, you can skip this section**
 
 - Insert a Pandas DataFrame into a Postgres table:
 
