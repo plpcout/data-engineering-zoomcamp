@@ -25,7 +25,7 @@ dev = [
 
 
 [tool.ruff]
-line-length = 88
+line-length = 100
 lint.select = ["F", "E", "W", "I"]
 lint.ignore = []
 # "F" - Pyflakes
