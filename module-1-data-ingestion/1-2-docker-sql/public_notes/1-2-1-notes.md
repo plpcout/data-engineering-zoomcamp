@@ -79,23 +79,23 @@ Exit the container with `Ctrl+D`.
 
 1. Start the container:
 
-```bash
-docker run -it python:3.12-slim bash
-```
+   ```bash
+   docker run -it python:3.12-slim bash
+   ```
 
 2. Install a library (e.g., pandas):
 
-```bash
-pip install pandas
-```
+   ```bash
+   pip install pandas
+   ```
 
 3. Test the library:
 
-```bash
-python
-import pandas as pd
-print(pd.__version__)
-```
+   ```bash
+   python
+   import pandas as pd
+   print(pd.__version__)
+   ```
 
 Exit with `Ctrl+D`.
 
@@ -120,7 +120,7 @@ cd intro
 touch Dockerfile
 ```
 
-#### c. Add the Following to Your `Dockerfile`:
+#### c. Add the Following to Your `Dockerfile`
 
 ```Dockerfile
 FROM python:3.12-slim
@@ -305,3 +305,8 @@ docker rm $(docker ps -a -q)
 ```bash
 docker rmi $(docker images -q)
 ```
+
+---
+
+| [HOME](../README.md) | [<< BACK](../README.md) | [NEXT >>](./1-2-2-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

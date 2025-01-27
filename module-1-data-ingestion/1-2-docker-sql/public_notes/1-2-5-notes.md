@@ -118,3 +118,8 @@ After starting the services, you can access:
 
 - PostgreSQL at `localhost:5432`
 - pgAdmin at `http://localhost:8080`
+
+---
+
+| [HOME](../README.md) | [<< BACK](./1-2-4-notes.md) | [NEXT >>](./1-2-6-notes.md) |
+| -------------------- | ---------------------------- | --------------------------- |

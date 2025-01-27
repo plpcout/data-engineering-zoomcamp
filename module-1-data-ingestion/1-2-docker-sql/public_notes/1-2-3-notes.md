@@ -22,7 +22,7 @@ The goal here is to compare the ease of **pgAdmin** for database management comp
 
 ### 3. **Create a Docker Network**
 
-> [!IMPORTANT] Very Important
+> [!IMPORTANT]
 > **Challenge**: pgAdmin and PostgreSQL containers cannot communicate directly because `localhost` inside one container refers to itself, not another container.
 >
 > **Solution**: Use Docker networks to allow the containers to communicate.
@@ -73,9 +73,10 @@ docker run -it \
   1. Right-click on "Servers" → Select "Register" → "Server".
   2. Under the "General" tab, provide a name (e.g., `docker_local`).
   3. In the "Connection" tab:
-      - **Host**: Use the container name of the PostgreSQL instance (e.g., `pg-database`).
-      - **Username**: `root`
-      - **Password**: `root`
+     - **Host**: Use the container name of the PostgreSQL instance (e.g., `pg-database`).
+     - **Username**: `root`
+     - **Password**: `root`
+
 - Save the configuration to connect.
 
 ### 5. **Exploring the Database**
@@ -106,3 +107,8 @@ On the pgAdmin interface navigate to:
 - Networking is essential for inter-container communication in Docker.
 - pgAdmin enhances the usability of PostgreSQL with its graphical interface and query tools.
 - Use container names in custom networks to reference services easily.
+
+---
+
+| [HOME](../README.md) | [<< BACK](./1-2-2-notes.md) | [NEXT >>](./1-2-4-notes.md) |
+| -------------------- | ---------------------------- | --------------------------- |

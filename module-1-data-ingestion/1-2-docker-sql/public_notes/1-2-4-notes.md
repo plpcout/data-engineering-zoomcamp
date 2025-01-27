@@ -68,10 +68,11 @@ os.system(f"wget {args.url} -O .files/output.csv")
 
 > [!IMPORTANT]
 > After all adjustments to the [ingest_data.py](./ingest_data.py) script, we are ready to run it locally passing the arguments.
+
 ---
+
 > [!CAUTION]
 > **NEVER** pass your credentials this way in a production environment.
-
 
 #### Run the following command
 
@@ -138,8 +139,9 @@ ENTRYPOINT ["python", "ingest_data.py"]
   ```
 
 - Run the container with appropriate arguments:
+
   > [!TIP]
-  > `--table_name=yellow_taxi_trips_container`  the table name was slightly changed to explicitly identify from where this data comes.
+  > `--table_name=yellow_taxi_trips_container` the table name was slightly changed to explicitly identify from where this data comes.
 
   ```bash
   URL="https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
@@ -181,3 +183,8 @@ ENTRYPOINT ["python", "ingest_data.py"]
 - Dockerizing a script ensures consistency across different environments.
 - Docker networks enable seamless communication between containers.
 - Proper logging and exception handling improve debugging and production readiness.
+
+---
+
+| [HOME](../README.md) | [<< BACK](./1-2-3-notes.md) | [NEXT >>](./1-2-5-notes.md) |
+| -------------------- | ---------------------------- | --------------------------- |

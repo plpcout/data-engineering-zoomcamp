@@ -160,8 +160,8 @@ This is an alternative method to connect to a Postgres database using Jupyter no
 
 ### Inserting Data (optional)
 
-- > [!TIP]
-   > **If you still have your Postgress table, you can skip this section**
+> [!TIP]
+> **If you still have your Postgress table, you can skip this section**
 
 - Insert a Pandas DataFrame into a Postgres table:
 
@@ -178,3 +178,8 @@ This is an alternative method to connect to a Postgres database using Jupyter no
   result_df = pd.read_sql(query, engine)
   print(result_df)
   ```
+
+---
+
+| [HOME](../README.md) | [<< BACK](./1-2-1-notes.md) | [NEXT >>](./1-2-3-notes.md) |
+| -------------------- | ---------------------------- | --------------------------- |

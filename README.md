@@ -1,5 +1,7 @@
 # Data Engineering Zoomcamp
 
+![Data Engineering Zoomcamp Overview](assets/images/arch_v4_workshops.jpg)
+
 ## Taking the course
 
 ### 2025 Cohort

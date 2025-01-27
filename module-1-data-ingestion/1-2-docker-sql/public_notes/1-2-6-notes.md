@@ -167,3 +167,8 @@ Grouping enables summarizing data, often combined with aggregate functions like 
 - **Joins and Grouping**: Fundamental for data transformations and aggregations in analytics.
 - **Best Practices**: Always validate data (e.g., check for `NULL` values, orphan IDs).
 - **SQL Agility**: Experiment with joins, group by multiple fields, and use aggregate functions to uncover deeper insights.
+
+---
+
+| [HOME](../README.md) | [<< BACK](./1-2-5-notes.md) |
+| -------------------- | ---------------------------- |
