@@ -1,11 +1,13 @@
 FROM python:3.12-slim
 
-RUN pip install pandas
+RUN apt-get update && apt-get install -y wget
+
+RUN pip install pandas sqlalchemy psycopg2-binary tqdm
 
 WORKDIR /app
 
-# COPY pipeline.py pipeline.py
-COPY pipeline_args.py pipeline_args.py
+COPY ingest_data.py ingest_data.py
 
-# ENTRYPOINT ["bash"]
-ENTRYPOINT ["python", "pipeline_args.py"]
+COPY ./files ./files
+
+ENTRYPOINT ["python", "ingest_data.py"]
