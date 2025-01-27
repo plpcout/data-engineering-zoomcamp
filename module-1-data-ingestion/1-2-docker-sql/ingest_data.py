@@ -30,68 +30,71 @@ def main(params):
     folder_path = "./files"
     csv_file_path = f"{folder_path}/{csv_name}"
 
-    # Using wget
-    os.system(f"wget {url} -O {csv_file_path}")
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+    else:
+        # Using wget
+        os.system(f"wget {url} -O {csv_file_path}")
 
-    # Load the real file to df
-    df = pd.read_csv(csv_file_path, engine="python")
-    total_rows = len(df)
+        # Load the real file to df
+        df = pd.read_csv(csv_file_path, engine="python")
+        total_rows = len(df)
 
-    # Convert text columns to datetime
-    df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
-    df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
+        # Convert text columns to datetime
+        df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
+        df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
 
-    # Prepare the column names to be used as the table schema
-    schema = df.head(n=0)
+        # Prepare the column names to be used as the table schema
+        schema = df.head(n=0)
 
-    # create_engine(dialect+driver://username:password@host:port/database)
-    engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{db}")
+        # create_engine(dialect+driver://username:password@host:port/database)
+        engine = create_engine(f"postgresql://{user}:{password}@{host}:{port}/{db}")
 
-    # Test the connection
-    try:
-        engine.connect()
-        print("Connected")
-    except Exception as e:
-        print(f"Connection Failed - {e}")
-    engine.dispose()
+        # Test the connection
+        try:
+            engine.connect()
+            print("Connected")
+        except Exception as e:
+            print(f"Connection Failed - {e}")
+        engine.dispose()
 
-    # Open connection with the DB
-    with engine.connect() as conn:
-        # Creates the table. If it already exists, replace.
-        schema.to_sql(if_exists="replace", name=table_name, con=conn, index=False)
+        # Open connection with the DB
+        with engine.connect() as conn:
+            # Creates the table. If it already exists, replace.
+            schema.to_sql(if_exists="replace", name=table_name, con=conn, index=False)
 
-    # Creates an Iterator to consume the data in chunks
-    chunk_size = 10000
-    chunks = pd.read_csv(
-        csv_file_path,
-        iterator=True,
-        chunksize=chunk_size,
-    )
+        # Creates an Iterator to consume the data in chunks
+        chunk_size = 10000
+        chunks = pd.read_csv(
+            csv_file_path,
+            iterator=True,
+            chunksize=chunk_size,
+        )
 
-    # Total chunks
-    total_chunks = ceil(total_rows / chunk_size)
+        # Total chunks
+        total_chunks = ceil(total_rows / chunk_size)
 
-    # Open connection with the DB
-    with engine.connect() as conn:
-        t_ini = time()
-        inserted_rows = 0
-        for chunk in tqdm(chunks, desc="Inserting data", unit="chunk", total=total_chunks):
-            # uncomment if you want to see each chunk being printed during insertions
-            # t_start = time()
+        # Open connection with the DB
+        with engine.connect() as conn:
+            t_ini = time()
+            inserted_rows = 0
+            for chunk in tqdm(chunks, desc="Inserting data", unit="chunk", total=total_chunks):
+                # uncomment if you want to see each chunk being printed during insertions
+                # t_start = time()
 
-            # Adjust dtypes - text to datetime
-            chunk.tpep_pickup_datetime = pd.to_datetime(chunk.tpep_pickup_datetime)
-            chunk.tpep_dropoff_datetime = pd.to_datetime(chunk.tpep_dropoff_datetime)
+                # Adjust dtypes - text to datetime
+                chunk.tpep_pickup_datetime = pd.to_datetime(chunk.tpep_pickup_datetime)
+                chunk.tpep_dropoff_datetime = pd.to_datetime(chunk.tpep_dropoff_datetime)
 
-            # Insert chunk
-            chunk.to_sql(if_exists="append", name=table_name, con=conn, index=False)
-            inserted_rows += len(chunk)
-            # Uncomment below: if you want to see each chunk being printed during insertions.
-            # t_end = time()
-            # print(f"Inserted {chunk_size} rows after {round(t_end - t_start, 1)} seconds.")
-        t_fin = time()
-        print("Connection closed")
-    print(f"Job Completed - Inserted {inserted_rows} after {round(t_fin - t_ini, 1)} seconds")
+                # Insert chunk
+                chunk.to_sql(if_exists="append", name=table_name, con=conn, index=False)
+                inserted_rows += len(chunk)
+                # Uncomment below: if you want to see each chunk being printed during insertions.
+                # t_end = time()
+                # print(f"Inserted {chunk_size} rows after {round(t_end - t_start, 1)} seconds.")
+            t_fin = time()
+            print("Connection closed")
+        print(f"Job Completed - Inserted {inserted_rows} after {round(t_fin - t_ini, 1)} seconds")
 
 
 if __name__ == "__main__":

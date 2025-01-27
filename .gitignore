@@ -11,6 +11,10 @@
 **/files/*
 !.gitkeep
 
+# Hw folders
+**/hw/*
+!hw.md
+
 # Postgres Folder
 **/ny_taxi_postgres_data
 
