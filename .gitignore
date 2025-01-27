@@ -7,6 +7,9 @@
 # private
 **/private
 
+# Credentials
+**/credentials*
+
 # Large files
 **/files/*
 !.gitkeep
@@ -17,6 +20,36 @@
 
 # Postgres Folder
 **/ny_taxi_postgres_data
+
+### Terraform ###
+
+# Local Terraform files
+*.tfstate
+*.tfstate.*
+
+# Crash log files
+crash.log
+
+# .terraform directory, which contains modules and provider plugins
+.terraform/
+
+# Override files that are automatically created when Terraform runs
+override.tf
+override.tf.json
+
+# Backup files created by Terraform
+*.tfplan
+*.tfplan.*
+
+# Sensitive output files (Terraform output files may contain sensitive info)
+*.tfvars
+*.tfvars.json
+
+# Ignore any other files related to secrets or sensitive data
+*.pem
+*.key
+
+### Terraform ###
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

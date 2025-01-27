@@ -3,9 +3,8 @@
 [![Python](https://img.shields.io/badge/Python-3.13-4B8BBE.svg?style=flat&logo=python&logoColor=FFD43B&labelColor=3776AB)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/docker-2496ED?style=flat&logo=docker&logoColor=fff&labelColor=2496ED)](https://www.docker.com/)
 [![Pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=E70488&labelColor=150458)](https://pandas.pydata.org/)
-[![uv](https://img.shields.io/badge/uv-30173D.svg?style=flat&logo=uv&logoColor=DE5FE9&labelColor=30173D)](https://docs.astral.sh/uv/)
-[![ruff](https://img.shields.io/badge/ruff-30173D.svg?style=flat&logo=ruff&logoColor=D7FF64&labelColor=30173D)](https://docs.astral.sh/ruff/)
-[![pre-commit](https://img.shields.io/badge/pre-commit-1F2D23.svg?style=flat&logo=precommit&logoColor=FAB040&labelColor=1F2D23)](https://pre-commit.com/)
+[![Terraform Badge](https://img.shields.io/badge/Terraform-844FBA?logo=terraform&logoColor=fff&style=flat)](https://www.terraform.io/)
+[![GCP](https://img.shields.io/badge/GCP-4285F4?style=flat&logo=googlecloud&logoColor=fff&labelColor=4285F4)](https://cloud.google.com/)
 
 ## Before starting
 
