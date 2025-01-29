@@ -1,7 +1,7 @@
 # Terraform Basics and Infrastructure Management (GCP)
 
 ## Overview
-This guide introduces **Terraform**, an **Infrastructure-as-Code** (IaC) tool used to automate and manage cloud infrastructure. You will learn how to set up Terraform with **Google Cloud Platform (GCP)**, manage resources such as **Google Cloud Storage (GCS) buckets**, and follow best practices to ensure secure and efficient usage.
+This document introduces **Terraform**, an **Infrastructure-as-Code** (IaC) tool used to automate and manage cloud infrastructure. You will learn how to set up Terraform with **Google Cloud Platform (GCP)**, manage resources such as **Google Cloud Storage (GCS) buckets**, and follow best practices to ensure secure and efficient usage.
 
 ---
 
@@ -50,10 +50,10 @@ A **Service Account** will allow Terraform to interact with GCP securely.
      - **BigQuery Admin** (for managing datasets)
      - **Compute Admin** (optional for managing VMs)
 
-      > [!IMPORTANT]
-      > Outside this learning environment, you should **always** follow the **principle of least privilege**.
-      >
-      > Avoid granting unnecessary permissions.
+> [!IMPORTANT]
+> Outside this learning environment, you should **always** follow the **principle of least privilege**.
+>
+> Avoid granting unnecessary permissions.
 
 2. **Generate Service Account Key**:
    - Download the **JSON key** file. This file contains sensitive credentials for Terraform.
@@ -72,8 +72,8 @@ A **Service Account** will allow Terraform to interact with GCP securely.
      gcloud auth activate-service-account --key-file=<KEY_PATH>
      ```
 
-      >[!TIP]
-      > If you don't have gcloud installed, you can refer to [install the gcloud CLI](https://cloud.google.com/sdk/docs/install) documentation.
+> [!TIP]
+> If you don't have gcloud installed, you can refer to [install the gcloud CLI](https://cloud.google.com/sdk/docs/install) documentation.
 
 ---
 
@@ -186,3 +186,8 @@ resource "google_storage_bucket" "demo_bucket" {
 
 - [Terraform Documentation](https://www.terraform.io/docs)
 - [Google Cloud Documentation](https://cloud.google.com/docs)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./1-1-1-notes.md) | [NEXT >>](./1-1-3-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

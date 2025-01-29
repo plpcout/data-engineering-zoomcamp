@@ -2,7 +2,7 @@
 
 ## Overview
 
- This note covers the **use of variables in Terraform**, a key feature for enhancing flexibility, reusability, and maintainability of infrastructure code. We will define and use variables within Terraform files, as well as how they improve your workflow when creating and managing resources.
+ This document covers the **use of variables in Terraform**, a key feature for enhancing flexibility, reusability, and maintainability of infrastructure code. We will define and use variables within Terraform files, as well as how they improve your workflow when creating and managing resources.
 
 ---
 - [Key Concepts and Sections](#key-concepts-and-sections)
@@ -120,7 +120,7 @@ variable "bq_dataset_name" {
   default     = "demo_dataset"
 }
 
-variable "location" {
+variable "region" {
   description = "Region for resources"
   default     = "US"
 }
@@ -132,13 +132,16 @@ variable "credentials" {
 }
 ```
 
-#### Using variables in resources
+#### Using variables
 
 ```hcl
 provider "google" {
-  credentials = file(var.credentials)
+  project = var.project
+  region  = var.region
 }
+```
 
+```hcl
 resource "google_bigquery_dataset" "demo_dataset" {
   dataset_id = var.bq_dataset_name
   location   = var.location
@@ -203,3 +206,8 @@ Using variables across your Terraform configuration ensures that your infrastruc
 - [Terraform Documentation](https://www.terraform.io/docs)
 - [Terraform Variables](https://www.terraform.io/docs/language/values/variables.html)
 - [Google Cloud Provider for Terraform](https://registry.terraform.io/providers/hashicorp/google/latest/docs)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./1-1-2-notes.md) |
+| -------------------- | ----------------------- |

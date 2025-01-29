@@ -3,7 +3,7 @@
 ## Overview
 [Terraform](https://www.terraform.io/), created by HashiCorp, is a powerful Infrastructure-as-Code (IaC) tool that allows you to define, provision, and manage infrastructure in a human-readable and reusable way. It supports a wide variety of cloud providers, including AWS, Google Cloud, Azure, and many others.
 
-With Terraform, you can simplify infrastructure management, enable collaboration, and ensure reproducibility of environments while avoiding unnecessary resource costs.
+With this tool you can simplify infrastructure management, enable collaboration, and ensure reproducibility of environments while avoiding unnecessary resource costs.
 
 ## Key Concepts
 
@@ -53,3 +53,8 @@ With Terraform, you can simplify infrastructure management, enable collaboration
 - Terraform simplifies infrastructure management by making it declarative and repeatable.
 - While it is beginner-friendly, caution is necessary when deploying resources due to potential cloud costs.
 - Always preview changes with `terraform plan` and ensure configurations are accurate before applying.
+
+---
+
+| [HOME](../README.md) | [<< BACK](../README.md) | [NEXT >>](./1-1-2-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |
