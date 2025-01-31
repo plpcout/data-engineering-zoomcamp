@@ -6,4 +6,4 @@ This module covers the essentials of workflow orchestration using [Kestra](https
 ## Resources
 
 - [Kestra Documentation](https://kestra.io/docs)
-- [Community Forums](https://community.kestra.io)
+- [Kestra GitHub](https://github.com/kestra-io/kestra)
