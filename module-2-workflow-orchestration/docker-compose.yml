@@ -25,7 +25,9 @@ services:
       - kestra-data:/app/storage
       - /var/run/docker.sock:/var/run/docker.sock
       - /tmp/kestra-wd:/tmp/kestra-wd
+      - ~/.credentials/kestra-credentials.json:/.gcp/kestra-credentials.json
     environment:
+      GOOGLE_APPLICATION_CREDENTIALS: '/.gcp/kestra-credentials.json'
       KESTRA_CONFIGURATION: |
         datasources:
           postgres:
@@ -97,3 +99,4 @@ volumes:
     name: zoomcamp-data
   pgadmin-data:
     name: pgadmin-data
+
