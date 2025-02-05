@@ -2,7 +2,7 @@
 
 ATTENTION: At the end of the submission form, you will be required to include a link to your GitHub repository or other public code-hosting site. This repository should contain your code for solving the homework. If your solution includes code that is not in file format, please include these directly in the README file of your repository.
 
-> In case you don't get one option exactly, select the closest one 
+> In case you don't get one option exactly, select the closest one
 
 For the homework, we'll be working with the _green_ taxi dataset located here:
 
@@ -39,11 +39,11 @@ Complete the Quiz shown below. It’s a set of 6 multiple-choice questions to te
     The uncompressed file size is **128.3 MB**.
     <br>
     </details>
-    
+
 ---
 
 2) What is the rendered value of the variable `file` when the inputs `taxi` is set to `green`, `year` is set to `2020`, and `month` is set to `04` during execution?
-- `{{inputs.taxi}}_tripdata_{{inputs.year}}-{{inputs.month}}.csv` 
+- `{{inputs.taxi}}_tripdata_{{inputs.year}}-{{inputs.month}}.csv`
 - `green_tripdata_2020-04.csv`
 - `green_tripdata_04_2020.csv`
 - `green_tripdata_2020.csv`
@@ -103,7 +103,7 @@ Complete the Quiz shown below. It’s a set of 6 multiple-choice questions to te
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #7799E5">Solution</summary>
 
     The number of rows for the `yellow` taxi data for the March 2021 CSV file is **1,925,152**
-    
+
     ![alt text](../assets/images/hw-image-3.png)
     </details>
 
@@ -111,10 +111,10 @@ Complete the Quiz shown below. It’s a set of 6 multiple-choice questions to te
 ---
 
 6) How would you configure the timezone to New York in a Schedule trigger?
-- Add a `timezone` property set to `EST` in the `Schedule` trigger configuration  
+- Add a `timezone` property set to `EST` in the `Schedule` trigger configuration
 - Add a `timezone` property set to `America/New_York` in the `Schedule` trigger configuration
 - Add a `timezone` property set to `UTC-5` in the `Schedule` trigger configuration
-- Add a `location` property set to `New_York` in the `Schedule` trigger configuration  
+- Add a `location` property set to `New_York` in the `Schedule` trigger configuration
 
     <details>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.2em; color: #7799E5">Solution</summary>
@@ -129,7 +129,7 @@ Complete the Quiz shown below. It’s a set of 6 multiple-choice questions to te
     # ...
     # ...
     ```
-    
+
     **As instructed by Kestra's documentation.**
 
     ![alt text](../assets/images/hw-image-4.png)

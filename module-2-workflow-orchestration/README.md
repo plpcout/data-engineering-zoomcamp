@@ -1,9 +1,13 @@
-# README TEMPLATE MODULE 2
+# Module 2 - Workflow Orchestration
 
-## Overview
-This module covers the essentials of workflow orchestration using [Kestra](https://kestra.io/), an open-source platform for building reliable workflows.
+## Before starting
 
-## Resources
+> [!IMPORTANT]
+> This repo is part of my experimenting and studying the material of the Data Engineering Zoomcamp.
+>
+> For a more detailed explanation, or if you want to follow along the DataTalks.Club DE Zoomcamp, go check their official [data-enginering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) repository for its amazing content.
 
-- [Kestra Documentation](https://kestra.io/docs)
-- [Kestra GitHub](https://github.com/kestra-io/kestra)
+## Getting Started
+
+
+1. Kestra Workflow Orchestration - Start [Here](./kestra/README.md).
