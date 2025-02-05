@@ -22,6 +22,7 @@
 **/ny_taxi_postgres_data
 
 ### Terraform ###
+**/terraform
 
 # Local Terraform files
 *.tfstate
