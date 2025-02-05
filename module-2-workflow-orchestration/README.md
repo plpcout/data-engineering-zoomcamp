@@ -10,4 +10,4 @@
 ## Getting Started
 
 
-1. Kestra Workflow Orchestration - Start [Here](./kestra/README.md).
+1. Kestra Workflow Orchestration - Start [Here](./kestra/).
