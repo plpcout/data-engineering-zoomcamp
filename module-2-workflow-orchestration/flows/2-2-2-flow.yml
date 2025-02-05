@@ -1,0 +1,41 @@
+id: 2-2-2-discord_webkook
+namespace: zoomcamp
+
+inputs:
+  - id: kestra_logo
+    type: STRING
+    defaults: https://avatars.githubusercontent.com/u/59033362?v=4
+
+  - id: discord_webhook_url
+    type: STRING
+    defaults: https://discord.com/api/webhooks/1334895749451878410/rAr_gzGVBl2FYDDZ78Ay_LSok_NmrWvo-GTmDHy42TUVKdwTf1tlgGmlPBti22yR0WxD
+
+tasks:
+  - id: python_script
+    type: io.kestra.plugin.scripts.python.Commands
+    namespaceFiles:
+      enabled: true
+    beforeCommands:
+      - python3 -m venv .venv
+      - . .venv/bin/activate
+      - pip install -r scripts/requirements.txt
+    commands:
+      - python scripts/api_example.py
+    runner: PROCESS
+
+  - id: outputs_gh_stars
+    type: io.kestra.plugin.core.log.Log
+    message: "Number or stars: {{outputs.python_script.vars.gh_stars}}"
+
+  - id: send_notification_discord
+    type: io.kestra.plugin.notifications.discord.DiscordExecution
+    content: "Total of github Stars: {{outputs.python_script.vars.gh_stars}}"
+    username: Kestra
+    avatarUrl: "{{inputs.kestra_logo}}"
+    url: "{{inputs.discord_webhook_url}}"
+
+triggers:
+  - id: hour_trigger
+    type: io.kestra.core.models.triggers.types.Schedule
+    cron: "* * * * *"
+    disabled: true
