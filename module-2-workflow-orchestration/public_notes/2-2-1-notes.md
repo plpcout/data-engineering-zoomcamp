@@ -17,6 +17,9 @@ For an in-depth look at **Kestra**, be sure to explore their [Kestra Docs](https
 - **Monitoring & logging** execution states
 - Integrating Kestra with **BigQuery, PostgreSQL, and cloud services**
 
+## 📁 Files used in this notebook
+- Kestra **`getting_started_data_pipeline`** flow [2-2-1-flow.yml](../flows/2-2-1-flow.yml)
+
 ## 🎼 What is Workflow Orchestration?
 
 Workflow orchestration ensures that different parts of a data pipeline execute in a well-defined order, similar to how an orchestra follows a conductor to create harmonious music.

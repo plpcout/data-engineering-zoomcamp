@@ -1,7 +1,10 @@
 # Getting Started with Kestra
 
-## 📑 Quick Overview
+## 📌 Overview
 
+This section provides a quick overview of **Kestra**'s initial workflow, which integrates with a notification channel. In this case, we will use **Discord** as the notification channel.
+
+## 📑 Quick Summary
 - **Event-driven orchestration** with automated execution
 - **YAML-based workflow definitions** for simple configuration
 - **Extensive plugin ecosystem** for integrations
@@ -16,6 +19,9 @@ Before getting started, ensure you have the following installed:
 - [**Docker**](https://www.docker.com/) (for running Kestra)
 - [**Python**](https://www.python.org/), for Python tasks. **(Optional)**
 - [**Discord account**](https://discord.com/), for notifications. **(Optional)**
+
+## 📁 Files used in this notebook
+- Kestra **`discord_webkook`** flow [2-2-2-flow.yml](../flows/2-2-2-flow.yml)
 
 ## 🎓 Core Concepts
 

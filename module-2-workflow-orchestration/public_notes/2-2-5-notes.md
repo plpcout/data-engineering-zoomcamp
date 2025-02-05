@@ -1,13 +1,8 @@
 # Orchestrating dbt Models with Postgres in Kestra (Sneak Peek - OPTIONAL)
 
-## 📌 Summary
+## 📌 Overview
 This section is a sneak peek into how to use **dbt (Data Build Tool)** with **Kestra** to automate data transformations.
 
-## 📁 Files used in this notebook
-- Kestra flow **[2-2-5-flow.yml](#)**
-<!-- TODO - add flow 2-2-5-flow.yml-->
-
-## 🌍 Overview
 ### What is dbt?
 **dbt (Data Build Tool)** is an open-source tool that allows data analysts and engineers to transform raw data in their warehouse using **SQL-based models**.
 
@@ -19,6 +14,9 @@ This section is a sneak peek into how to use **dbt (Data Build Tool)** with **Ke
 The workflow pulls data, runs dbt transformations on a **PostgreSQL database**, and produces structured and cleaned data.
 
 ![alt text](../assets/images/image-3.png)
+
+## 📁 Files used in this notebook
+- Kestra **`postgres_dbt`** flow [2-2-5-flow.yml](../flows/2-2-5-flow.yml)
 
 ## 🛠️ Setup
 ### Configure PostgreSQL Connection

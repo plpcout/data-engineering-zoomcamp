@@ -5,7 +5,7 @@
 This pipeline is designed for scheduled ingestion of NYC taxi trip data (yellow or green) into Google Cloud Platform (GCP).
 
 ## 📁 Files used in this notebook
-- Kestra flow **[2-2-7-flow.yml](#)**
+- Kestra **`gcp_taxi_scheduled`** flow [2-2-7-flow.yml](../flows/2-2-7-flow.yml)
 
 ## ⏰ Scheduling Data Ingestion
 

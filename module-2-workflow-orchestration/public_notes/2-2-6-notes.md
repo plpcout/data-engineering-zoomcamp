@@ -9,11 +9,6 @@ This note covers how to set up and run an ETL pipeline using **Kestra**, as an o
 - Load data into **BigQuery** for processing
 - Automate the pipeline with **Kestra workflows**
 
-## 📁 Files used in this notebook
-- Kestra flow **[kv_flow.yml](#)**
-- Kestra flow **[setup_flow.yml](#)**
-- Kestra flow **[main_flow.yml](#)**
-<!-- TODO - add flows -->
 
 ## ⚙️ Prerequisites
 
@@ -26,6 +21,10 @@ Before setting up the ETL pipeline, ensure you have the following:
   - `Storage Admin` 📁 (to manage GCS)
   - `BigQuery Admin` 📊 (to manage BigQuery)
 
+## 📁 Files used in this notebook
+- Kestra **`gcp_kv`** flow [2-2-6-1-flow.yml](../flows/2-2-6-1-flow.yml)
+- Kestra **`gcp_setup`** flow [2-2-6-2-flow.yml](../flows/2-2-6-2-flow.yml)
+- Kestra **`gcp_taxi`** flow [2-2-6-3-flow.yml](../flows/2-2-6-3-flow.yml)
 
 ## 🏗️ Key Concepts
 
@@ -59,9 +58,7 @@ Before setting up the ETL pipeline, ensure you have the following:
         value:  your-project-id
     ```
 
-    - Check [kv_flow.yml](#) for more details.
-    <!-- TODO - add flows -->
-
+    - Check **`gcp_kv`** flow [2-2-6-1-flow.yml](../flows/2-2-6-1-flow.yml) for more details.
 
 - **Set Up Plugin Defaults** to simplify authentication and configuration.
   ```yml
@@ -81,16 +78,17 @@ Before setting up the ETL pipeline, ensure you have the following:
 
 
 ## 📤 Uploading Data to GCS
-<!-- TODO add flows -->
 1. **Run the [Setup Workflow](#) to create:**
    - **GCS Bucket**
    - **BigQuery Dataset**
 
-<!-- TODO add flows -->
+     - Check **`gcp_setup`** flow [2-2-6-2-flow.yml](../flows/2-2-6-2-flow.yml) for more details.
+
+
 2. **Now into the `main_flow`**:
     - Run the Extract **CSV Files** from [NYC Taxi Data](https://github.com/DataTalksClub/nyc-tlc-data/releases)
     - Task `id: extract`
-
+      - Check **`gcp_taxi`** flow [2-2-6-3-flow.yml](../flows/2-2-6-3-flow.yml) for more details.
 
 ## 🔄 ETL Pipeline Tasks
 

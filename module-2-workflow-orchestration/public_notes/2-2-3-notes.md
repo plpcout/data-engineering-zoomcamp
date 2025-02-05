@@ -1,4 +1,4 @@
-# 🚀 ETL Pipeline with PostgreSQL and Kestra
+# ETL Pipeline with PostgreSQL and Kestra
 
 ## 📌 Overview
 
@@ -15,20 +15,19 @@ The pipeline extracts data from a public dataset, transforms it by adding unique
 - **Efficient Storage Management**: Automatic file purging to save space.
 - **Optimized Processing**: Conditional execution for structured workflow management.
 
-## ⚙️ Prerequisites
+## 🛠️  Prerequisites
 
 Before getting started, make sure you have:
 
 - **[Docker](https://www.docker.com/)** installed to run the containers.
 
 ## 📁 Files used in this notebook
-- Compose file **[docker-compose.yml](../docker-compose.yml)**
-- Kestra flow **[2-2-3-flow.yml](#)**
-<!-- TODO - add flow 2-2-3-flow.yml-->
+- Docker Compose file [docker-compose.yml](../docker-compose.yml)
+- Kestra **`postgres_taxi`** flow [2-2-3-flow.yml](../flows/2-2-3-flow.yml)
 
 ## 🐋 Starting the Pipeline Containers.
 
-**Start containers defined in the docker compose file**:
+Start containers defined in the docker compose file**:
 
 - Kestra, PostgreSQL, pgAdmin
 - ```sh
@@ -205,7 +204,7 @@ To **optimize storage**, the pipeline removes processed files after execution:
 1. **Execute the Kestra Flow**.
 2. **Monitor Logs** using one of Kestra’s **Execution views**.
 3. **Verify Data in PostgreSQL**:
-- You can also check the data using **pgAdmin** at [localhost:8085](http://localhost:8085/) (check the port used in your docker-compose file).
+- You can also check the data using **pgAdmin** at [localhost:[your-port]](http://localhost:8085/) (check the port used in your docker-compose file).
 
    ```sql
    SELECT COUNT(*) FROM public.green_tripdata;
