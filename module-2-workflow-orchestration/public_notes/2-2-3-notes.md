@@ -23,7 +23,7 @@ Before getting started, make sure you have:
 
 ## 📁 Files used in this notebook
 - Compose file **[docker-compose.yml](../docker-compose.yml)**
-- Kestra flow **[2-2-3-flow.yml](#)** 
+- Kestra flow **[2-2-3-flow.yml](#)**
 <!-- TODO - add flow 2-2-3-flow.yml-->
 
 ## 🐋 Starting the Pipeline Containers.
@@ -98,7 +98,7 @@ The workflow fetches datasets dynamically from this **[repository](https://githu
 
 #### Staging Table (Temporary Processing Area)
 - The staging table is created to hold the data before final storage:
-  
+
   ```yaml
   - id: green_create_staging_table
     type: io.kestra.plugin.jdbc.postgresql.Queries
@@ -206,7 +206,12 @@ To **optimize storage**, the pipeline removes processed files after execution:
 2. **Monitor Logs** using one of Kestra’s **Execution views**.
 3. **Verify Data in PostgreSQL**:
 - You can also check the data using **pgAdmin** at [localhost:8085](http://localhost:8085/) (check the port used in your docker-compose file).
-   
+
    ```sql
    SELECT COUNT(*) FROM public.green_tripdata;
    ```
+
+---
+
+| [HOME](../README.md) | [<< BACK](./2-2-2-notes.md) | [NEXT >>](./2-2-4-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

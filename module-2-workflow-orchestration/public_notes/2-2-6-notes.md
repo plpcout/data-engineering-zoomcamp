@@ -92,10 +92,10 @@ Before setting up the ETL pipeline, ensure you have the following:
     - Task `id: extract`
 
 
-## 🔄 ETL Pipeline Tasks 
+## 🔄 ETL Pipeline Tasks
 
 > [!NOTE]
-> 
+>
 > Check the [main_flow.yml](#)
 
 ### 🗂️ **Extract**
@@ -161,3 +161,7 @@ Before setting up the ETL pipeline, ensure you have the following:
 
 ✔️ **GCS as a data lake** ensures efficient data storage.
 
+---
+
+| [HOME](../README.md) | [<< BACK](./2-2-5-notes.md) | [NEXT >>](./2-2-7-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

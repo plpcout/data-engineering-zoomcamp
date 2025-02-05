@@ -9,7 +9,7 @@ This section is a sneak peek into how to use **dbt (Data Build Tool)** with **Ke
 
 ## 🌍 Overview
 ### What is dbt?
-**dbt (Data Build Tool)** is an open-source tool that allows data analysts and engineers to transform raw data in their warehouse using **SQL-based models**. 
+**dbt (Data Build Tool)** is an open-source tool that allows data analysts and engineers to transform raw data in their warehouse using **SQL-based models**.
 
 > [!NOTE]
 >
@@ -75,5 +75,7 @@ The **dbt CLI task** to build and transform the data:
 - Modify the `schema.yml` file to align with your database schema.
 - Use `dbt debug` before `dbt build` to validate the connection.
 
+---
 
-
+| [HOME](../README.md) | [<< BACK](./2-2-4-notes.md) | [NEXT >>](./2-2-6-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

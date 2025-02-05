@@ -4,7 +4,7 @@
 
 This section explores how to efficiently manage **Cron schedules** and **backfills** using PostgreSQL in [Kestra](https://kestra.io/).
 
-- Schedule workflows using **Cron expressions**  
+- Schedule workflows using **Cron expressions**
 - Implement **backfilling** to handle historical data
 - Optimize scheduling for **efficiency and reliability**
 
@@ -50,7 +50,7 @@ Kestra supports **Cron-based scheduling**, allowing workflows to run at specific
 
 ### Minor Help - Understanding Cron Expressions
 
-A **Cron expression** consists of **five fields**:  
+A **Cron expression** consists of **five fields**:
 `minute hour day month day-of-week`
 
 | Field         | Allowed Values  | Example |
@@ -68,7 +68,7 @@ Example Cron Patterns:
 - `0 */6 * * *` → Runs **every 6 hours**
 
 > [!TIP]
-> 
+>
 >Use **[Crontab Guru](https://crontab.guru/)** to test your Cron expressions!
 
 ## 🔄 Handling Backfills
@@ -81,7 +81,7 @@ A **backfill** is a process that re-runs workflows for missing or past time inte
 >
 > We dont need the **year** and **month** inputs anymore.
 >
-> Also, adjust the variables accordingly. 
+> Also, adjust the variables accordingly.
 
 
 ### How to Implement Backfills in Kestra
@@ -99,3 +99,8 @@ A **backfill** is a process that re-runs workflows for missing or past time inte
 ![backfill](../assets/images/image-1.png)
 
 **6.** Click the **Execute Backfill** button or schedule the backfill.
+
+---
+
+| [HOME](../README.md) | [<< BACK](./2-2-3-notes.md) | [NEXT >>](./2-2-5-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

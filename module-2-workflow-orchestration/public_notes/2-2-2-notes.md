@@ -231,3 +231,8 @@ triggers:
  - [**Install Kestra with Docker Compose**](https://kestra.io/docs/installation/docker-compose)
  - [**Tutorial**](https://kestra.io/docs/getting-started/tutorial) - to schedule and orchestrate your first workflows.
  - [**What is an Orchestrator?**](https://kestra.io/blogs/2024-09-18-what-is-an-orchestrator)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./2-2-1-notes.md) | [NEXT >>](./2-2-3-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

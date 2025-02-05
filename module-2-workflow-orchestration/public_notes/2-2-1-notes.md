@@ -95,3 +95,8 @@ Kestra simplifies workflow orchestration by offering:
 - Flexible **low-code and full-code options**.
 - Real-time **monitoring & logging**.
 - Seamless **cloud integrations**.
+
+---
+
+| [HOME](../README.md) | [<< BACK](../README.md) | [NEXT >>](./2-2-2-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |
