@@ -144,6 +144,12 @@ This is an alternative method to connect to a Postgres database using Jupyter no
   print(df)
   ```
 
+> [!NOTE]
+>
+> The steps above are in this notebook: [pg-test-connection.ipynb](../pg-test-connection.ipynb)
+
+---
+
 ### Listing Tables
 
 - The `\dt` command in `pgcli` does not work in standard SQL. Use an equivalent query to list tables:

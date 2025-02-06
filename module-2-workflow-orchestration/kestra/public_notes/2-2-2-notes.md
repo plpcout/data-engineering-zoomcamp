@@ -190,7 +190,7 @@ triggers:
     # true - to disable the trigger
     disabled: false
 ```
-> [!TIP]TIP
+> [!TIP]
 >
 > This can be done either by coding on the `source` tab or using the `topology` tab ui.
 
