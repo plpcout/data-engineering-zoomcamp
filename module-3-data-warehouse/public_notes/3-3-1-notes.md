@@ -16,7 +16,7 @@ For reproducing the code, ensure the requirements are in place:
 
 - **BigQuery ML**: A tool within BigQuery that enables machine learning capabilities using SQL queries.
 - **Feature Engineering**: The transformation of raw data into meaningful features used for model training.
-- **Hyperparameter Tuning**: The process of adjusting a model's hyperparameters to enhance performance.
+- **Hyperparameter Tuning**: The process of adjusting a model's hyper parameters to enhance performance.
 
 ## 🛠️ Hands-on
 
@@ -27,7 +27,7 @@ Before building a machine learning model, it's important to prepare your data. B
 ```sql
 -- SELECT THE COLUMNS INTERESTED FOR YOU
 SELECT passenger_count, trip_distance, PULocationID, DOLocationID, payment_type, fare_amount, tolls_amount, tip_amount
-FROM `taxi-rides-ny.nytaxi.yellow_tripdata_partitoned` WHERE fare_amount != 0;
+FROM `taxi-rides-ny.nytaxi.yellow_tripdata_partitioned` WHERE fare_amount != 0;
 ```
 
 ### 2. Create a Machine Learning Table
@@ -60,7 +60,7 @@ CREATE OR REPLACE TABLE `taxi-rides-ny.nytaxi.yellow_tripdata_ml` (
     fare_amount,
     tolls_amount,
     tip_amount
-  FROM `taxi-rides-ny.nytaxi.yellow_tripdata_partitoned`
+  FROM `taxi-rides-ny.nytaxi.yellow_tripdata_partitioned`
   WHERE fare_amount != 0
 );
 ```
