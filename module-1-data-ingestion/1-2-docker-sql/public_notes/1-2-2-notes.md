@@ -79,7 +79,7 @@ This is a summary of the process of setting up a PostgreSQL database using Docke
   - Read the dataset in chunks using Pandas iterators (`chunk_size=100000`).
   - Create the table using the `head(n=0)` to get the column names.
 
-    > **Atention**: The table will be **created** if it doesn't exist or **replaced** if it already exists
+    > **Attention**: The table will be **created** if it doesn't exist or **replaced** if it already exists
 
     ```python
     df.head(n=0).to_sql('table_name', engine, if_exists='replace', index=False)
@@ -167,7 +167,7 @@ This is an alternative method to connect to a Postgres database using Jupyter no
 ### Inserting Data (optional)
 
 > [!TIP]
-> **If you still have your Postgress table, you can skip this section**
+> **If you still have your Postgres table, you can skip this section**
 
 - Insert a Pandas DataFrame into a Postgres table:
 

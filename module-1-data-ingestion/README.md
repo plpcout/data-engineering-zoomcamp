@@ -13,12 +13,12 @@
 > [!IMPORTANT]
 > This repo is part of my experimenting and studying the material of the Data Engineering Zoomcamp.
 >
-> For a more detailed explanation, or if you want to follow along the DataTalks.Club DE Zoomcamp, go check their official [data-enginering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) repository for its amazing content.
+> For a more detailed explanation, or if you want to follow along the DataTalks.Club DE Zoomcamp, go check their official [data-engineering-zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) repository for its amazing content.
 
 ## Getting Started
 
-1. Infrastructure as Code with Terraform - Start [Here](./1-1-terraform-gcp/README.md).
-2. Data Ingestion with Docker Containers & SQL - Start [Here](./1-2-docker-sql/README.md).
+1. Infrastructure as Code with Terraform - Start [Here](./1-1-terraform-gcp/).
+2. Data Ingestion with Docker Containers & SQL - Start [Here](./1-2-docker-sql/).
 
 ## Developer Setup
 

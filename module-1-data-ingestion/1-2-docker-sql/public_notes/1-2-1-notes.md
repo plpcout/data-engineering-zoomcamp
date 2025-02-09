@@ -255,7 +255,7 @@ COPY pipeline_args.py pipeline_args.py
 ENTRYPOINT ["python", "pipeline_args.py"]
 ```
 
-- `ENTRYPOINT` Sets the default entrypoint command. In this case: `python pypeline_args.py`.
+- `ENTRYPOINT` Sets the default entrypoint command. In this case: `python pipeline_args.py`.
 
 #### c. Rebuild the modified Image
 
@@ -284,7 +284,7 @@ Pipeline execution finished for day: 2025-18-01
 
 #### a. If you want to delete a single instance
 
-- Conteiner: `docker rm container_name|container_id`
+- Container: `docker rm container_name|container_id`
 
 - Image: `docker rmi image_name|image_id`
 
