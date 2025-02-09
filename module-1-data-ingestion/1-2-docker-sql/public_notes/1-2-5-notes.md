@@ -33,7 +33,7 @@ Docker Compose simplifies managing multiple related containers by defining confi
 ### Example Setup for PostgreSQL and pgAdmin
 
 > [!TIP]
-> Why such a verbose `docker-compse.yaml` file?
+> Why such a verbose `docker-compose.yaml` file?
 >
 > - **To provide additional context for those new to Docker Compose.**
 

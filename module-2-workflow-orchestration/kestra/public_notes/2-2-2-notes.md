@@ -21,7 +21,7 @@ Before getting started, ensure you have the following installed:
 - [**Discord account**](https://discord.com/), for notifications. **(Optional)**
 
 ## 📁 Files used in this notebook
-- Kestra **`discord_webkook`** flow [2-2-2-flow.yml](../flows/2-2-2-flow.yml)
+- Kestra **`discord_webhook`** flow [2-2-2-flow.yml](../flows/2-2-2-flow.yml)
 
 ## 🎓 Core Concepts
 
