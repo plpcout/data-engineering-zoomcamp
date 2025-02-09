@@ -99,3 +99,8 @@ For additional insights into BigQuery’s internals:
 - [BigQuery Admin reference guide](https://cloud.google.com/blog/topics/developers-practitioners/bigquery-admin-reference-guide-storage)
 
 - [BigQuery under the hood](https://cloud.google.com/blog/products/bigquery/bigquery-under-the-hood)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./3-2-1-notes.md) | [NEXT >>](./3-3-1-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |

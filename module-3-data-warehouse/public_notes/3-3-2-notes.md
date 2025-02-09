@@ -127,11 +127,7 @@ Response should be similar to:
 
 ```json
 {
-  "predictions": [
-    [
-      3.2312432525242432
-    ]
-  ]
+  "predictions": [[3.2312432525242432]]
 }
 ```
 
@@ -142,3 +138,8 @@ The response includes a predicted tip amount, which varies based on input parame
 ## 📚 Additional Resources
 
 - [BigQuery ML Model Deployment Tutorial](https://cloud.google.com/bigquery-ml/docs/export-model-tutorial)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./3-3-1-notes.md) |
+| -------------------- | --------------------------- |

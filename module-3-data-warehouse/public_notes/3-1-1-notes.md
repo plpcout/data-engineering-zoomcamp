@@ -319,3 +319,8 @@ Use BigQuery’s cost tracking tools to monitor and estimate costs before runnin
 - [BigQuery Documentation](https://cloud.google.com/bigquery/docs)
 - [BigQuery Pricing](https://cloud.google.com/bigquery/pricing)
 - [Public Datasets in BigQuery](https://cloud.google.com/bigquery/public-data)
+
+---
+
+| [HOME](../README.md) | [<< BACK](../README.md) | [NEXT >>](./3-1-2-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

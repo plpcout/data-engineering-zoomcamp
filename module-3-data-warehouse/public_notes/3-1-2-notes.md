@@ -18,22 +18,24 @@ Partitioning is the process of dividing large tables into smaller, more manageab
 BigQuery supports different types of partitioning:
 
 1. **Time-Based Partitioning:**
+
    - Partition data based on time units (e.g., **day**, **hour**, **month**, **year**). This is ideal for time-series data (e.g., logs).
-        | Column value           | Partition (monthly) |
-        |------------------------|---------------------|
-        | DATETIME("2019-01-01") | 201901              |
-        | DATETIME("2019-01-15") | 201901              |
-        | DATETIME("2019-04-30") | 201904              |
+     | Column value | Partition (monthly) |
+     |------------------------|---------------------|
+     | DATETIME("2019-01-01") | 201901 |
+     | DATETIME("2019-01-15") | 201901 |
+     | DATETIME("2019-04-30") | 201904 |
 
 2. **Integer Range Partitioning:**
+
    - Use when partitioning based on an integer range, although this is less common than time-based partitioning.
 
-        | Argument    | Value       |
-        |-------------|-------------|
-        | Column name | customer_id |
-        | Start       | 0           |
-        | End         | 100         |
-        | Interval    | 10          |
+     | Argument    | Value       |
+     | ----------- | ----------- |
+     | Column name | customer_id |
+     | Start       | 0           |
+     | End         | 100         |
+     | Interval    | 10          |
 
    - The table is partitioned on the `customer_id` column into ranges of interval 10. The values 0 to 9 go into one partition, values 10 to 19 go into the next partition, etc., up to 99. Values outside this range go into a partition named `__UNPARTITIONED__`. Any rows where `customer_id` is `NULL` go into a partition named `__NULL__`
 
@@ -151,3 +153,8 @@ In this combined approach:
 
 - BigQuery documentation on [Partitioning](https://cloud.google.com/bigquery/docs/partitioned-tables)
 - BigQuery documentation on [Clustering](https://cloud.google.com/bigquery/docs/clustered-tables)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./3-1-1-notes.md) | [NEXT >>](./3-2-1-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |

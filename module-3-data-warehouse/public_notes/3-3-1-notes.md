@@ -203,3 +203,8 @@ The most commonly used evaluation metrics for machine learning models are:
 
 - [The CREATE MODEL statement](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create)
 - [Regression and Classification](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-glm)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./3-2-2-notes.md) | [NEXT >>](./3-3-2-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |

@@ -196,3 +196,8 @@ Following these **BigQuery best practices** will:
 - [BigQuery Documentation](https://cloud.google.com/bigquery/docs)
 
 - [BigQuery Optimizing Query Performance](https://cloud.google.com/bigquery/docs/best-practices-performance-overview)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./3-1-2-notes.md) | [NEXT >>](./3-2-2-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |
