@@ -1,0 +1,22 @@
+[project]
+name = "dbt-core-run"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dbt-bigquery>=1.9.1",
+]
+
+
+
+
+[tool.ruff]
+line-length = 100
+lint.select = ["F", "E", "W", "I"]
+lint.ignore = []
+# "F" - Pyflakes
+# "E" - Error codes - PEP 8
+# "W" - Warning codes - PEP 8
+# "I" - Import sorting and unused imports
+# See https://docs.astral.sh/ruff/rules/
