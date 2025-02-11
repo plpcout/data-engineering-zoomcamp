@@ -1,0 +1,21 @@
+version: 2
+
+# This configuration file defines the structure of your data warehouse.
+# See the docs: https://docs.getdbt.com/docs/building-a-dbt-project/using-sources/
+# Learn more about configuring sources in the docs: https://docs.getdbt.com/docs/building-a-dbt-project/using-sources#configuring-sources
+
+# The `sources` config is a dictionary where the keys are the source
+# names, and the values are themselves dictionaries with information
+# about the source.
+
+# The `tables` config is a dictionary where the keys are the table
+# names, and the values are themselves dictionaries with information
+# about the tables.
+sources:
+  - name: staging # The name of the source, typically a data warehouse or external system
+    database: de-zoomcamp-25-449418 # The database name within the data warehouse
+    schema: de_zoomcamp_staging # The schema within the database containing the tables
+
+    tables:
+      - name: green_tripdata_2020_04_ext # The name of the table containing order data
+      - name: yellow_tripdata_2020_04_ext # The name of the table containing customer data
