@@ -1,0 +1,36 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# DLT configurations and outputs
+.dlt/
+.dlt_cache/
+dlt-config.json
+
+# DuckDB database files
+*.duckdb
+*.db
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Other generated files
+*.csv
+*.parquet
+*.json
+
+# Test and coverage files
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+*.hypothesis/
