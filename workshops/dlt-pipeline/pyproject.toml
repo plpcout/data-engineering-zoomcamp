@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dlt[duckdb]>=1.6.1",
+    "dlt[duckdb,postgres]>=1.6.1",
     "streamlit>=1.42.0",
 ]
 
