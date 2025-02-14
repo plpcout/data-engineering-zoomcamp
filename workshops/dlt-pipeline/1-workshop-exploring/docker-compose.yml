@@ -1,8 +1,9 @@
 services:
   postgres:
     image: postgres:17-alpine
+    restart: always
     environment:
-      POSTGRES_USER: s
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: ny_taxi_data
       PGDATA: /var/lib/postgresql/data/pgdata
