@@ -1,11 +1,12 @@
 [project]
-name = "dlt-pipeline"
+name = "workshop-1-dlt"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dlt[duckdb,postgres]>=1.6.1",
+    "dlt[bigquery,duckdb,filesystem,gs,postgres]>=1.6.1",
+    "enlighten>=1.13.0",
     "streamlit>=1.42.0",
 ]
 
@@ -13,6 +14,7 @@ dependencies = [
 dev = [
     "ipykernel>=6.29.5",
     "jedi>=0.19.2",
+    "jupyter>=1.1.1",
     "ruff>=0.9.6",
 ]
 
