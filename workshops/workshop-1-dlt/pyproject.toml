@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "dlt[bigquery,duckdb,filesystem,gs,postgres]>=1.6.1",
+    "dlt[bigquery,duckdb,postgres]>=1.6.1",
     "enlighten>=1.13.0",
     "streamlit>=1.42.0",
 ]
