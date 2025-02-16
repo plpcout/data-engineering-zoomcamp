@@ -1,4 +1,10 @@
 # Data ingestion with dlt
+[![Python](https://img.shields.io/badge/Python-3.13-4B8BBE.svg?style=flat&logo=python&logoColor=FFD43B&labelColor=3776AB)](https://www.python.org/)
+[![dlt](https://img.shields.io/badge/dlt-1.6.1-C6D300?style=flat&logo=dlt&labelColor=59C1D5)](https://dlthub.com/)
+[![Docker](https://img.shields.io/badge/docker-2496ED?style=flat&logo=docker&logoColor=fff&labelColor=2496ED)](https://www.docker.com/)
+![Postgres](https://img.shields.io/badge/postgres-4169E1.svg?style=flat&logo=postgresql&logoColor=FFF&labelColor=4169E1)
+[![pgAdmin](https://img.shields.io/badge/pgAdmin-23456A?style=flat&logo=pgadmin&logoColor=fff&labelColor=23456A)](https://www.pgadmin.org/)
+[![Google BigQuery Badge](https://img.shields.io/badge/Google%20BigQuery-669DF6?logo=googlebigquery&logoColor=fff&style=flat)](https://cloud.google.com/bigquery)
 
 > [!IMPORTANT]
 >
