@@ -1,8 +1,4 @@
-{{
-  config(
-    materialized = 'table',
-    )
-}}
+{{ config(materialized='view') }}
 
 with tripdata as
 (

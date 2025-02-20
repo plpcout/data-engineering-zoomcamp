@@ -1,11 +1,11 @@
 # Name your project! Project names should contain only lowercase characters
 # and underscores. A good package name should reflect your organization's
 # name or the intended use of these models
-name: 'taxi_rides_ny'
-version: '1.0.0'
+name: "taxi_rides_ny"
+version: "1.0.0"
 
 # This setting configures which "profile" dbt uses for this project.
-profile: 'taxi_rides_ny'
+profile: "taxi_rides_ny"
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
@@ -17,10 +17,9 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
-clean-targets:         # directories to be removed by `dbt clean`
+clean-targets: # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
-
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -32,4 +31,12 @@ models:
   taxi_rides_ny:
     # Config indicated by + and applies to all files under models/example/
     # example:
-      # +materialized: view
+    # +materialized: view
+
+vars:
+  db_name: de-zoomcamp-25-449418
+  dataset: de_zoomcamp_staging
+  green_tripdata: green_tripdata_2020_04_ext
+  yellow_tripdata: yellow_tripdata_2020_04_ext
+
+  payment_type_values: [1, 2, 3, 4, 5, 6]
