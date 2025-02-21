@@ -44,7 +44,6 @@ models:
 vars:
   db_name: de-zoomcamp-25-449418
   dataset: de_zoomcamp_staging
-  green_tripdata: green_tripdata_2020_04_ext
-  yellow_tripdata: yellow_tripdata_2020_04_ext
 
   payment_type_values: [1, 2, 3, 4, 5, 6]
+
