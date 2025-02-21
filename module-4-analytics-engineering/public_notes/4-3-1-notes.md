@@ -175,7 +175,7 @@ This document provides a structured approach to creating dbt models, covering ke
 - **Execute with full data**:
 
   ```sh
-  dbt build --vars '{"is_test_run": "false"}'
+  dbt build --vars '{is_test_run: false}'
   ```
 
 - **Run models with dependencies**:
