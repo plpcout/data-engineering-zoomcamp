@@ -94,6 +94,28 @@ What would you change to accomplish that in a such way that command line argumen
 * Update the WHERE clause to `pickup_datetime >= CURRENT_DATE - INTERVAL '{{ var("days_back", env_var("DAYS_BACK", "30")) }}' DAY`
 * Update the WHERE clause to `pickup_datetime >= CURRENT_DATE - INTERVAL '{{ env_var("DAYS_BACK", var("days_back", "30")) }}' DAY`
 
+  <details>
+  <summary>Solution</summary>
+  <br>
+
+  Precedence:
+    1. Command line argument check using `var("days_back")`.
+
+    2. Environment variable `env_var("DAYS_BACK")`.
+
+    3. If none provided, it falls back to the default value "30".
+
+  ### Answer
+
+  * [ ] Add `ORDER BY pickup_datetime DESC` and `LIMIT {{ var("days_back", 30) }}`
+  * [ ] Update the WHERE clause to `pickup_datetime >= CURRENT_DATE - INTERVAL '{{ var("days_back", 30) }}' DAY`
+  * [ ] Update the WHERE clause to `pickup_datetime >= CURRENT_DATE - INTERVAL '{{ env_var("DAYS_BACK", "30") }}' DAY`
+  * [x] Update the WHERE clause to `pickup_datetime >= CURRENT_DATE - INTERVAL '{{ var("days_back", env_var("DAYS_BACK", "30")) }}' DAY`
+  * [ ] Update the WHERE clause to `pickup_datetime >= CURRENT_DATE - INTERVAL '{{ env_var("DAYS_BACK", var("days_back", "30")) }}' DAY`
+
+  <br>
+  </details>
+
 ### Question 3: dbt Data Lineage and Execution
 
 Considering the data lineage below **and** that taxi_zone_lookup is the **only** materialization build (from a .csv seed file):
