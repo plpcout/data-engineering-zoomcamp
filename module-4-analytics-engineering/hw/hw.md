@@ -12,7 +12,7 @@ For this homework, you will need the following datasets:
 2. You should have exactly `7,778,101` records in your Green Taxi table
 3. You should have exactly `109,047,518` records in your Yellow Taxi table
 4. You should have exactly `43,244,696` records in your FHV table
-5. Build the staging models for green/yellow as shown in [here](../../../04-analytics-engineering/taxi_rides_ny/models/staging/)
+5. Build the staging models for green/yellow as shown in [here](../../../04-analytics-engineering/taxi_rides_ny/models/staging)
 6. Build the dimension/fact for taxi_trips joining with `dim_zones`  as shown in [here](../../../04-analytics-engineering/taxi_rides_ny/models/core/fact_trips.sql)
 
 **Note**: If you don't have access to GCP, you can spin up a local Postgres instance and ingest the datasets above
@@ -52,6 +52,26 @@ from {{ source('raw_nyc_tripdata', 'ext_green_taxi' ) }}
 * `select * from myproject.raw_nyc_tripdata.ext_green_taxi`
 * `select * from myproject.my_nyc_tripdata.ext_green_taxi`
 * `select * from dtc_zoomcamp_2025.raw_nyc_tripdata.green_taxi`
+
+  <details>
+  <summary>Solution</summary>
+  <br>
+
+  Dbt will use `env_vars` as long as they exists.
+  Since `DBT_BIGQUERY_DATASET` was set instead of `DBT_BIGQUERY_SOURCE_DATASET`, dbt falls back to the default schema (raw_nyc_tripdata).
+
+  ![alt text](../assets/images/image-1.png)
+
+  ### Answer
+
+  * [ ] `select * from dtc_zoomcamp_2025.raw_nyc_tripdata.ext_green_taxi`
+  * [ ] `select * from dtc_zoomcamp_2025.my_nyc_tripdata.ext_green_taxi`
+  * [x] `select * from myproject.raw_nyc_tripdata.ext_green_taxi`
+  * [ ] `select * from myproject.my_nyc_tripdata.ext_green_taxi`
+  * [ ] `select * from dtc_zoomcamp_2025.raw_nyc_tripdata.green_taxi`
+
+  <br>
+  </details>
 
 ### Question 2: dbt Variables & Dynamic Models
 
