@@ -130,6 +130,29 @@ Select the option that does **NOT** apply for materializing `fct_taxi_monthly_zo
 * `dbt run --select +models/core/`
 * `dbt run --select models/staging/+`
 
+  <details>
+  <summary>Solution</summary>
+  <br>
+  I was so sure it was the last one I thought it might have a catch.
+  Therefore I took the time to test it.
+
+  **Same Lineage**
+  ![alt text](../assets/images/image-2.png)
+
+  **Command run** (Only `taxi_zone_lookup` initially materialized as Instructed.)
+  ![alt text](../assets/images/image-3.png)
+
+  ### Answer
+
+  * [ ] `dbt run`
+  * [ ] `dbt run --select +models/core/dim_taxi_trips.sql+ --target prod`
+  * [ ] `dbt run --select +models/core/fct_taxi_monthly_zone_revenue.sql`
+  * [ ] `dbt run --select +models/core/`
+  * [x] `dbt run --select models/staging/+`
+
+  <br>
+  </details>
+
 ### Question 4: dbt Macros and Jinja
 
 Consider you're dealing with sensitive data (e.g.: [PII](https://en.wikipedia.org/wiki/Personal_data)), that is **only available to your team and very selected few individuals**, in the `raw layer` of your DWH (e.g: a specific BigQuery dataset or PostgreSQL schema),
