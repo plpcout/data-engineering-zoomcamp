@@ -192,6 +192,26 @@ That all being said, regarding macro above, **select all statements that are tru
 * When using `stg`, it materializes in the dataset defined in `DBT_BIGQUERY_STAGING_DATASET`, or defaults to `DBT_BIGQUERY_TARGET_DATASET`
 * When using `staging`, it materializes in the dataset defined in `DBT_BIGQUERY_STAGING_DATASET`, or defaults to `DBT_BIGQUERY_TARGET_DATASET`
 
+  <details>
+  <summary>Solution</summary>
+  <br>
+
+  The macro uses env_var(stging_env_var, env_var(target_env_var)) for non-core models.
+  The staging variable is optional—if unset, it falls back to the target dataset (which is already required).
+  Therefore this is false:
+  * Setting a value for `DBT_BIGQUERY_STAGING_DATASET` env var is mandatory, or it'll fail to compile
+
+  ### Answer
+
+  * [x] Setting a value for  `DBT_BIGQUERY_TARGET_DATASET` env var is mandatory, or it'll fail to compile
+  * [ ] Setting a value for `DBT_BIGQUERY_STAGING_DATASET` env var is mandatory, or it'll fail to compile
+  * [x] When using `core`, it materializes in the dataset defined in `DBT_BIGQUERY_TARGET_DATASET`
+  * [x] When using `stg`, it materializes in the dataset defined in `DBT_BIGQUERY_STAGING_DATASET`, or defaults to `DBT_BIGQUERY_TARGET_DATASET`
+  * [x] When using `staging`, it materializes in the dataset defined in `DBT_BIGQUERY_STAGING_DATASET`, or defaults to `DBT_BIGQUERY_TARGET_DATASET`
+
+  <br>
+  </details>
+
 ## Serious SQL
 
 Alright, in module 1, you had a SQL refresher, so now let's build on top of that with some serious SQL.
