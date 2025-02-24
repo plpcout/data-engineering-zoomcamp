@@ -238,6 +238,29 @@ Considering the YoY Growth in 2020, which were the yearly quarters with the best
 * green: {best: 2020/Q1, worst: 2020/Q2}, yellow: {best: 2020/Q1, worst: 2020/Q2}
 * green: {best: 2020/Q1, worst: 2020/Q2}, yellow: {best: 2020/Q3, worst: 2020/Q4}
 
+  <details>
+  <summary>Solution</summary>
+  <br>
+
+  This question took some extra time to digest and properly tackle it.
+  1. I ended up with this bq table out of my `fct_taxi_trips_quarterly_revenue.sql` dbt model:
+
+      ![alt text](../assets/images/image-4.png)
+
+  2. As an extra step, I took the time to build `fct_service_qt_rk.sql` model to materialize the results:
+      ![alt text](../assets/images/image-5.png)
+
+  ### Answer
+
+  * [ ] green: {best: 2020/Q2, worst: 2020/Q1}, yellow: {best: 2020/Q2, worst: 2020/Q1}
+  * [ ] green: {best: 2020/Q2, worst: 2020/Q1}, yellow: {best: 2020/Q3, worst: 2020/Q4}
+  * [ ] green: {best: 2020/Q1, worst: 2020/Q2}, yellow: {best: 2020/Q2, worst: 2020/Q1}
+  * [x] green: {best: 2020/Q1, worst: 2020/Q2}, yellow: {best: 2020/Q1, worst: 2020/Q2}
+  * [ ] green: {best: 2020/Q1, worst: 2020/Q2}, yellow: {best: 2020/Q3, worst: 2020/Q4}
+
+  <br>
+  </details>
+
 ### Question 6: P97/P95/P90 Taxi Monthly Fare
 
 1. Create a new model `fct_taxi_trips_monthly_fare_p95.sql`
