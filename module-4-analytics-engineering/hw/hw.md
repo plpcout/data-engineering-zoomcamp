@@ -275,6 +275,26 @@ Now, what are the values of `p97`, `p95`, `p90` for Green Taxi and Yellow Taxi, 
 * green: {p97: 40.0, p95: 33.0, p90: 24.5}, yellow: {p97: 31.5, p95: 25.5, p90: 19.0}
 * green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 52.0, p95: 25.5, p90: 19.0}
 
+  <details>
+  <summary>Solution</summary>
+  <br>
+
+  Although I managed to get an answer, it was off by `0.5`, which is a bit disappointing.
+
+  So I'm gonna revisit this question, to check the official solution later.
+  <!-- TODO : Check the official solution in the future -->
+  (There may be some subtle issue with my approach that needs to be addressed)
+
+  ![alt text](../assets/images/image-6.png)
+
+  ### Answer
+
+  * [ ]  green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 52.0, p95: 37.0, p90: 25.5}
+  * [x]  green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 31.5, p95: 25.5, p90: 19.0}
+  * [ ]  green: {p97: 40.0, p95: 33.0, p90: 24.5}, yellow: {p97: 52.0, p95: 37.0, p90: 25.5}
+  * [ ]  green: {p97: 40.0, p95: 33.0, p90: 24.5}, yellow: {p97: 31.5, p95: 25.5, p90: 19.0}
+  * [ ]  green: {p97: 55.0, p95: 45.0, p90: 26.5}, yellow: {p97: 52.0, p95: 25.5, p90: 19.0}
+
 ### Question 7: Top #Nth longest P90 travel time Location for FHV
 
 Prerequisites:
