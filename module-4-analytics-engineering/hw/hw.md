@@ -317,6 +317,27 @@ For the Trips that **respectively** started from `Newark Airport`, `SoHo`, and `
 * LaGuardia Airport, Rosedale, Bath Beach
 * LaGuardia Airport, Yorkville East, Greenpoint
 
+  <details>
+  <summary>Solution</summary>
+  <br>
+
+  This question was a great way to put all the concepts together and have fun with it.
+
+  For the solution, I've decided to materialize the model, with an extra step, so I could easily access the results later.
+
+  ![alt text](../assets/images/image-7.png)
+
+  ### Answer
+
+  * [x] LaGuardia Airport, Chinatown, Garment District
+  * [ ] LaGuardia Airport, Park Slope, Clinton East
+  * [ ] LaGuardia Airport, Saint Albans, Howard Beach
+  * [ ] LaGuardia Airport, Rosedale, Bath Beach
+  * [ ] LaGuardia Airport, Yorkville East, Greenpoint
+
+  <br>
+  </details>
+
 ## Submitting the solutions
 
 * Form for submitting: <https://courses.datatalks.club/de-zoomcamp-2025/homework/hw4>
