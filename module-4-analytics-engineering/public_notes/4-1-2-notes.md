@@ -83,7 +83,7 @@ WHERE condition = 'true';
 3. Enhance datasets with **additional data sources**.
 4. Create **dashboards** for visualization and reporting.
 
-![alt text](assets/images/image.png)
+![alt text](../assets/images/image.png)
 
 ## 📚 Additional Resources
 
