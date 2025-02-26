@@ -29,9 +29,11 @@ A **dbt project** includes a predefined structure with essential configuration f
 **Methods to initialize:**
 
 - **Using dbt CLI**:
+
   ```sh
   dbt init <project_name>
   ```
+
   This generates the necessary files and folders.
 - **Using dbt Cloud**:
   - The web-based IDE provides a guided setup process.
@@ -63,14 +65,19 @@ A **dbt project** includes a predefined structure with essential configuration f
 ### Running dbt Commands
 
 - **Build the project**:
+
   ```sh
   dbt build
   ```
+
 - **Install dependencies**:
+
   ```sh
   dbt deps
   ```
+
 - **Run models and materialize tables**:
+
   ```sh
   dbt run
   ```
@@ -85,3 +92,8 @@ A **dbt project** includes a predefined structure with essential configuration f
 
 - [dbt Documentation](https://docs.getdbt.com/)
 - [dbt Cloud Setup](https://docs.getdbt.com/docs/get-started-dbt#dbt-cloud)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./4-1-2-notes.md) | [NEXT >>](./4-2-2-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |

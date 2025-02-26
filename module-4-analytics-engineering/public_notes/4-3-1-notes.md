@@ -169,9 +169,11 @@ This document provides a structured approach to creating dbt models, covering ke
   ```
 
 - **Run a specific model**:
+
   ```sh
   dbt run --select fact_trips
   ```
+
 - **Execute with full data**:
 
   ```sh
@@ -179,6 +181,7 @@ This document provides a structured approach to creating dbt models, covering ke
   ```
 
 - **Run models with dependencies**:
+
   ```sh
   dbt build --select +fact_trips
   ```
@@ -189,3 +192,8 @@ This document provides a structured approach to creating dbt models, covering ke
 - [dbt Utils Package](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/)
 - [dbt codegen Package](https://hub.getdbt.com/dbt-labs/codegen/latest/)
 - [Jinja Templating](https://jinja.palletsprojects.com/)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./4-2-2-notes.md) | [NEXT >>](./4-3-2-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |

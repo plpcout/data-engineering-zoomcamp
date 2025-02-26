@@ -28,3 +28,12 @@
 ## Navigation Menu
 
 [Back to the top]()
+
+<!-- TODO : CHECK WHAT NEEDS TO BE DONE -->
+
+TODO:
+
+- [ ] Update the README.md
+- [ ] Add the navigation menu
+- [ ] Add Deploy section
+- [ ] Add Visualization section

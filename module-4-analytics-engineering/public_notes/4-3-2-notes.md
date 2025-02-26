@@ -108,14 +108,19 @@ This are the main topics:
 ### Running Tests
 
 - **Run all tests**:
+
   ```sh
   dbt test
   ```
+
 - **Run tests on a specific model**:
+
   ```sh
   dbt test --select trips
   ```
+
 - **Run a single test**:
+
   ```sh
   dbt test --select test_name
   ```
@@ -124,6 +129,7 @@ This are the main topics:
 
 - The [`dbt-codegen`](https://github.com/dbt-labs/dbt-codegen) package can generate `schema.yml` files automatically.
 - Example command to generate model YAML:
+
   ```sh
   dbt run-operation generate_model_yaml --args '{"models": ["trips"]}'
   ```
@@ -132,13 +138,17 @@ This are the main topics:
 
 - dbt enables automatic documentation generation using metadata from YAML files.
 - **Generate documentation**:
+
   ```sh
   dbt docs generate
   ```
+
 - **Serve documentation locally**:
+
   ```sh
   dbt docs serve
   ```
+
 - The documentation includes:
   - Model descriptions
   - Column descriptions
@@ -157,3 +167,8 @@ This are the main topics:
 - [dbt Codegen Package](https://github.com/dbt-labs/dbt-codegen)
 - [dbt Testing](https://docs.getdbt.com/reference/resource-properties/data-tests)
 - [dbt Testing Best Practices](https://docs.getdbt.com/docs/building-a-dbt-project/tests)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./4-3-1-notes.md) |
+| -------------------- | --------------------------- |

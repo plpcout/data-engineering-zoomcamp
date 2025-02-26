@@ -43,3 +43,8 @@ Analytics engineering bridges the gap between data engineering and data analysis
 | **Staging Area**      | Ingredients Storage | Raw data is stored and not directly accessible to end users. |
 | **Processing Area**   | Kitchen             | Data is transformed, ensuring consistency and structure.     |
 | **Presentation Area** | Dining Hall         | Final transformed data is presented to stakeholders.         |
+
+---
+
+| [HOME](../README.md) | [<< BACK](../README.md) | [NEXT >>](./4-1-2-notes.md) |
+| -------------------- | ----------------------- | --------------------------- |

@@ -88,3 +88,8 @@ WHERE condition = 'true';
 ## 📚 Additional Resources
 
 - [dbt Documentation](https://docs.getdbt.com/)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./4-1-1-notes.md) | [NEXT >>](./4-2-1-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |

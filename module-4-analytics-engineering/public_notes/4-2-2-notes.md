@@ -31,13 +31,17 @@ A **dbt project** consists of essential configuration files and folders.
 
 - **Create a new repository** to store the project.
 - **Clone the repository locally**:
+
   ```sh
   git clone <repository_url>
   ```
+
 - **Navigate to the project directory** and run:
+
   ```sh
   dbt init <project_name>
   ```
+
   This generates the required files and folders.
 
 ### Configuring the Project
@@ -53,6 +57,7 @@ A **dbt project** consists of essential configuration files and folders.
 - The **`profiles.yml`** file manages **database connections**.
 - This file is located at `~/.dbt/profiles.yml`.
 - Example Postgres configuration:
+
   ```yaml
   my_postgres_profile:
     target: dev
@@ -67,12 +72,14 @@ A **dbt project** consists of essential configuration files and folders.
         schema: dbt_models
         threads: 4
   ```
+
 - Ensure the **profile name** in `dbt_project.yml` matches `my_postgres_profile`.
 
 ### Switching Between Environments
 
 - Different **targets** can be defined within `profiles.yml`.
 - Example additional **sandbox** environment:
+
   ```yaml
   sandbox:
     type: postgres
@@ -84,6 +91,7 @@ A **dbt project** consists of essential configuration files and folders.
     schema: sandbox_models
     threads: 2
   ```
+
 - Switch environments by modifying the `target` value.
 
 ## 🔑 Working with dbt Models
@@ -96,18 +104,25 @@ A **dbt project** consists of essential configuration files and folders.
 ### Running dbt Commands
 
 - **Check database connection**:
+
   ```sh
   dbt debug
   ```
+
 - **Build the project**:
+
   ```sh
   dbt build
   ```
+
 - **Run models and materialize tables**:
+
   ```sh
   dbt run
   ```
+
 - **Install dependencies**:
+
   ```sh
   dbt deps
   ```
@@ -122,3 +137,8 @@ A **dbt project** consists of essential configuration files and folders.
 
 - [dbt Documentation](https://docs.getdbt.com/)
 - [dbt Core Setup](https://docs.getdbt.com/docs/get-started-dbt#dbt-core)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./4-2-1-notes.md) | [NEXT >>](./4-3-1-notes.md) |
+| -------------------- | --------------------------- | --------------------------- |
