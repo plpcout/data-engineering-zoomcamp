@@ -1,5 +1,9 @@
 # Module 4 - Analytics Engineering
-<!-- TODO : MAIN README UPDATE -->
+
+[![Google Cloud Platform](https://img.shields.io/badge/Google%20Cloud%20Platform-4285F4?style=flat&logo=googlecloud&logoColor=fff&labelColor=4285F4)](https://cloud.google.com/)
+[![BigQuery](https://img.shields.io/badge/Google%20BigQuery-669DF6?logo=googlebigquery&logoColor=fff&style=flat)](https://cloud.google.com/bigquery)
+[![dbt](https://img.shields.io/badge/dbt-FF694B?logo=dbt&logoColor=fff&style=flat)](https://www.getdbt.com/)
+[![uv](https://img.shields.io/badge/uv-DE5FE9?logo=uv&logoColor=fff&style=flat)](https://docs.astral.sh/uv/)
 
 ## Before starting
 
@@ -144,25 +148,16 @@ It also covers **best practices for building dbt models, setting up dbt projects
 
 ## Navigation Menu
 
-| 📌 **dbt Topics**                                               | 📜 **Description**                                                 |
-|-----------------------------------------------------------------|-------------------------------------------------------------------|
-| [1. Analytics Engineering Basics](./public_notes/4-1-1-notes.md) | Introduction to data modeling and engineering best practices.    |
-| [2. What is dbt?](./public_notes/4-1-2-notes.md)               | Overview of dbt Core and dbt Cloud.                              |
-| [3. Setting Up dbt with BigQuery](./public_notes/4-2-1-notes.md) | Cloud-based setup and execution using dbt Cloud.                |
-| [4. Setting Up dbt with Postgres](./public_notes/4-2-2-notes.md) | Local setup using dbt Core with PostgreSQL.                      |
-| [5. Building dbt Models](./public_notes/4-3-1-notes.md)       | Creating dbt models with modular transformations.                 |
-| [6. Testing dbt Projects](./public_notes/4-3-2-notes.md)      | Implementing data validation and documentation.                  |
-| [7. Deploying dbt](./public_notes/4-4-1-notes.md)            | Scheduling, CI/CD, and production best practices.                |
+| **Notes**                                                        | **Description**                                                   |
+|------------------------------------------------------------------|-------------------------------------------------------------------|
+| [1. Analytics Engineering Basics](./public_notes/4-1-1-notes.md) | Introduction to data modeling and engineering best practices.     |
+| [2. What is dbt?](./public_notes/4-1-2-notes.md)                 | Overview of dbt Core and dbt Cloud.                               |
+| [3. Setting Up dbt with BigQuery](./public_notes/4-2-1-notes.md) | Cloud-based setup and execution using dbt Cloud.                  |
+| [4. Setting Up dbt with Postgres](./public_notes/4-2-2-notes.md) | Local setup using dbt Core with PostgreSQL.                       |
+| [5. Building dbt Models](./public_notes/4-3-1-notes.md)          | Creating dbt models with modular transformations.                 |
+| [6. Testing dbt Projects](./public_notes/4-3-2-notes.md)         | Implementing data validation and documentation.                   |
+| [7. Deploying dbt](./public_notes/4-4-1-notes.md)                | Scheduling, CI/CD, and production best practices.                 |
 
 ---
 
 [⬆️ Back to the top](#module-4---analytics-engineering)
-
-<!-- TODO : CHECK WHAT NEEDS TO BE DONE -->
-
-TODO:
-
-- [x] Update the README.md
-- [x] Add the navigation menu
-- [x] Add Deploy section
-- [ ] Add Visualization section (not sure about this one)
