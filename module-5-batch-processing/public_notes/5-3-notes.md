@@ -261,3 +261,8 @@ This section explores the core functionalities of Spark, including working with 
 - [Monitoring Spark Jobs](https://spark.apache.org/docs/latest/web-ui.html)
 - [Spark SQL Functions](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/functions.html)
 - [Parquet File Format](https://parquet.apache.org/)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./5-2-notes.md) | [NEXT >>](./5-4-notes.md) |
+| -------------------- | ------------------------- | ------------------------- |

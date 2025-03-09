@@ -229,3 +229,8 @@ Navigate to the BigQuery console and check if the table has been created and pop
 - [Google Cloud Dataproc Docs](https://cloud.google.com/dataproc/docs)
 - [IAM Roles for Dataproc](https://cloud.google.com/dataproc/docs/concepts/iam)
 - [Dataproc Submit a Job](https://cloud.google.com/dataproc/docs/guides/submit-job#dataproc-submit-job-gcloud)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./5-4-notes.md) |
+| -------------------- | ------------------------- |

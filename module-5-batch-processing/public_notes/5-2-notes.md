@@ -27,3 +27,8 @@ Apache Spark requires a proper installation and environment setup to function ef
 - [Linux](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/linux.md)
 - [macOS](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/macos.md)
 - [Windows](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/05-batch/setup/windows.md)
+
+---
+
+| [HOME](../README.md) | [<< BACK](./5-1-notes.md) | [NEXT >>](./5-3-notes.md) |
+| -------------------- | ------------------------- | ------------------------- |

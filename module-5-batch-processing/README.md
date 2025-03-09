@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3.12-4B8BBE.svg?style=flat&logo=python&logoColor=FFD43B&labelColor=306998)
 [![SDKMan](https://img.shields.io/badge/SDKMan-1076C6?style=flat&logo=openjdk&logoColor=FFFFFF&labelColor=1076C6)](https://sdkman.io/)
-![Apache Spark Badge](https://img.shields.io/badge/Apache%20Spark-E25A1C?logo=apachespark&logoColor=fff&style=flat)
+[![Apache Spark](https://img.shields.io/badge/Apache%20Spark-3.5-1D6890?logo=apachespark&logoColor=E25A1C&labelColor=1D6890&style=flat)](https://spark.apache.org/)
 [![PySpark](https://img.shields.io/badge/PySpark-3.5-262A38?style=flat-square&logo=apachespark&logoColor=E36B22&labelColor=262A38)](https://spark.apache.org/docs/latest/api/python/user_guide)
 [![uv](https://img.shields.io/badge/astral/uv-261230?style=flat&logo=uv&logoColor=DE5FE9&labelColor=261230)](https://docs.astral.sh/uv/getting-started/installation/)
 [![Pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=E70488&labelColor=150458)](https://pandas.pydata.org/docs/user_guide/)

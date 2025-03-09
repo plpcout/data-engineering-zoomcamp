@@ -91,3 +91,8 @@ This section covers:
 - [Apache Spark Documentation](https://spark.apache.org/docs/latest/)
 - [Apache Airflow](https://airflow.apache.org/)
 - [PySpark Guide](https://spark.apache.org/docs/latest/api/python/)
+
+---
+
+| [HOME](../README.md) | [<< BACK](../README.md) | [NEXT >>](./5-2-notes.md) |
+| -------------------- | ----------------------- | ------------------------- |
