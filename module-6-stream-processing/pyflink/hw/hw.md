@@ -76,7 +76,13 @@ What's the version, based on the output of the command you executed? (copy the e
 <summary>Solution</summary>
 <br>
 
+```bash
+docker compose exec redpanda-1 rpk --version
+```
+
 ### Answer
+
+- Output: `rpk version v24.2.18 (rev f9a22d4430)`
 
 <br>
 </details>
@@ -96,7 +102,16 @@ What's the output of the command for creating a topic? Include the entire output
 <summary>Solution</summary>
 <br>
 
+```bash
+docker compose exec redpanda-1 rpk topic create green-trips
+```
+
 ### Answer
+
+```bash
+TOPIC        STATUS
+green-trips  OK
+```
 
 <br>
 </details>
@@ -143,7 +158,13 @@ of the last command?
 <summary>Solution</summary>
 <br>
 
+![alt text](../assets/hw/images/image-1.png)
+
 ### Answer
+
+```bash
+True
+```
 
 <br>
 </details>
