@@ -271,11 +271,11 @@ ORDER BY streak_count DESC
 LIMIT 1
 ```
 
-![alt text](../assets/hw/images/image-2.png)
+![alt text](../assets/hw/images/image-1.png)
 
 - Additional info on `locationid` = `95`:
 
-    ![alt text](../assets/hw/images/image-3.png)
+    ![alt text](../assets/hw/images/image-2.png)
 
 Check solutions on: [hw.ipynb](./hw.ipynb)
 
