@@ -246,10 +246,47 @@ Now we have the data in the Kafka stream. It's time to process it.
 <details>
 <summary>Solution</summary>
 <br>
+For this question:
+
+1. Messages should be stored in Kafka topic (Q4)
+
+2. Run Apache Flink job (session_job.py)
+    - `make session_job`
+
+3. Query your postgres database:
+
+    - I used Cloudbeaver running on docker.
+
+```sql
+SELECT
+  pulocationid AS pickup_location_id
+  ,dolocationid AS dropoff_location_id
+  ,streak_count
+  ,session_start
+  ,session_end
+  ,(session_end - session_start) session_duration
+FROM
+  location_streaks ls
+ORDER BY streak_count DESC
+LIMIT 1
+```
+
+![alt text](../assets/hw/images/image-2.png)
+
+- Additional info on `locationid` = `95`:
+
+    ![alt text](../assets/hw/images/image-3.png)
 
 Check solutions on: [hw.ipynb](./hw.ipynb)
 
 ### Answer
+
+- Pickup location 95
+  - (Forest Hills, Queens)
+- Drop off location 95
+  - (Forest Hills, Queens)
+
+With the longest unbroken streak of 44 trips.
 
 <br>
 </details>
